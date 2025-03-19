@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile-Friendly Advanced TV Remote</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="remote">
+    <!-- Main Page -->
+    <div class="page active" id="main-page">
+      <div class="display" id="display">
+        <span id="power-status">Power: Off</span>
+        <span id="volume">Volume: 50%</span>
+        <span id="channel">Channel: 1</span>
+      </div>
+      <div class="logo">
+        <img src="https://via.placeholder.com/100x30?text=TV+Remote" alt="TV Logo">
+      </div>
+      <div class="section power">
+        <button id="power">🔴</button>
+      </div>
+      <div class="section controls">
+        <button id="vol-up">🔊</button>
+        <button id="vol-down">🔉</button>
+        <button id="ch-up">📺⬆️</button>
+        <button id="ch-down">📺⬇️</button>
+      </div>
+      <div class="numpad">
+        <button>1</button><button>2</button><button>3</button>
+        <button>4</button><button>5</button><button>6</button>
+        <button>7</button><button>8</button><button>9</button>
+        <button>0</button>
+      </div>
+      <div class="navigation">
+        <button class="up">⬆️</button>
+        <button class="left">⬅️</button>
+        <button class="ok">✅</button>
+        <button class="right">➡️</button>
+        <button class="down">⬇️</button>
+      </div>
+      <div class="touchpad" id="touchpad">Swipe Here</div>
+      <div class="section footer">
+        <button id="mute">🔇</button>
+        <button id="back">↩️</button>
+        <button id="home">🏠</button>
+        <button id="fav">⭐</button>
+        <button id="voice">🎤</button>
+      </div>
+      <div class="section ott">
+        <button id="youtube">▶️</button>
+        <button id="netflix">🎬</button>
+        <button id="favorites-btn">📋</button>
+        <button id="settings-btn">⚙️</button>
+      </div>
+    </div>
+
+    <!-- OTT Page -->
+    <div class="page" id="ott-page">
+      <div class="display" id="ott-display">
+        <span id="ott-status">OTT Mode</span>
+        <span id="ott-content">Select a service</span>
+      </div>
+      <div class="section ott-controls">
+        <button id="ott-play">▶️</button>
+        <button id="ott-pause">⏸️</button>
+        <button id="ott-stop">⏹️</button>
+        <button id="ott-prev">⏮️</button>
+        <button id="ott-next">⏭️</button>
+      </div>
+      <div class="navigation">
+        <button class="up">⬆️</button>
+        <button class="left">⬅️</button>
+        <button class="ok">✅</button>
+        <button class="right">➡️</button>
+        <button class="down">⬇️</button>
+      </div>
+      <div class="section">
+        <button id="ott-back">🏠</button>
+      </div>
+    </div>
+
+    <!-- Favorites Page -->
+    <div class="page" id="favorites-page">
+      <div class="display">
+        <span>Favorite Channels</span>
+      </div>
+      <div class="favorites-list" id="favorites-list">
+        <!-- Dynamically populated -->
+      </div>
+      <div class="section">
+        <button id="fav-back">🏠</button>
+      </div>
+    </div>
+
+    <!-- Settings Page -->
+    <div class="page" id="settings-page">
+      <div class="display">
+        <span>Settings</span>
+      </div>
+      <div class="settings-grid">
+        <div class="setting-item">
+          <label>Beep Volume</label>
+          <select id="beep-volume">
+            <option value="0">Off</option>
+            <option value="0.5">Low</option>
+            <option value="1" selected>Normal</option>
+            <option value="1.5">High</option>
+          </select>
+        </div>
+        <div class="setting-item">
+          <label>Vibration</label>
+          <select id="vibration">
+            <option value="true" selected>On</option>
+            <option value="false">Off</option>
+          </select>
+        </div>
+        <div class="setting-item">
+          <label>Speech</label>
+          <select id="speech">
+            <option value="true" selected>On</option>
+            <option value="false">Off</option>
+          </select>
+        </div>
+        <div class="setting-item">
+          <label>Theme</label>
+          <select id="theme">
+            <option value="dark" selected>Dark</option>
+            <option value="light">Light</option>
+          </select>
+        </div>
+      </div>
+      <div class="section">
+        <button id="settings-back">🏠</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
